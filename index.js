@@ -1,5 +1,24 @@
-var EventEmitter = require('emitter');
-var inherits = require('inherit');
+var EventEmitter, inherits;
+
+try {
+	EventEmitter = require('emitter');
+} catch (e) {
+	EventEmitter = require('events').EventEmitter;
+}
+
+if (!EventEmitter) {
+	throw new Error('Could not require EventEmitter.');
+}
+
+try {
+	inherits = require('inherit');
+} catch (e) {
+	inherits = require('util').inherits;
+}
+
+if (!inherits) {
+	throw new Error('Could not require inherits.');
+}
 
 function EventManager() {
 	EventEmitter.call(this);
