@@ -1,0 +1,13 @@
+{
+	"name": "mage-event-manager.js",
+	"repo": "mage/event-manager.js",
+	"version": "0.1.0",
+	"description": "An event manager for MAGE.",
+	"dependencies": {
+		"component/emitter": "1.1.3",
+		"component/inherit": "0.0.3"
+	},
+	"scripts": [
+		"index.js"
+	]
+}
