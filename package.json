@@ -1,7 +1,7 @@
 {
 	"name": "mage-event-manager.js",
 	"description": "dot-notation, hierarchical event emission",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"author": "Wizcorp, Inc. <info@wizcorp.jp>",
 	"dependencies": {},
 	"devDependencies": {
